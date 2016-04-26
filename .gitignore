@@ -37,7 +37,7 @@
 *.vrb
 *.xdy
 *.tdo
-
+*.swp
 
 ### TeX ###
 ## Core latex/pdflatex auxiliary files:
