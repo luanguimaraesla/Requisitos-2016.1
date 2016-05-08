@@ -53,20 +53,37 @@ A Scaled Agile dá total suporte para a implementação do SAFe, possuindo cente
   \newpage
 
   \section{RUP}
-  O Rational Unified Process (RUP) é um processo de software iterativo e incremental desenvolvido no final dos anos 90, para lidar com aplicações de larga escala robustas, escaláveis e extensíveis. Foi o primeiro processo largamente adotado que reconheceu a necessidade de estender a área de abrangência das atividades que ocorriam nas fases de iniciação, elaboração, construção e transição durante o ciclo de vida.[LEFFINGEL?] Possui uma abordagem baseada em disciplinas na atribuição de tarefas e responsabilidades em um empreendimento. [WTHREEX]
+O Rational Unified Process (RUP) é um processo de Engenharia de Software iterativo e incremental desenvolvido no final dos anos 90. Fornece uma abordagem disciplinada para se delegar tarefas e responsabilidades dentro de uma organização de desenvolvimento, cujo objetivo é assegurar a produção de \textit{software} de alta qualidade dentro de prazos e orçamentos previsíveis e controlados~\cite{kruchten}.
+
+É considerado um processo tradicional de sucesso para lidar com aplicações de larga escala robustas, escaláveis e extensíveis, por isso foi o primeiro processo largamente adotado que reconheceu a necessidade de estender a área de abrangência das atividades que ocorriam nas fases de iniciação, elaboração, construção e transição durante o ciclo de vida~\cite{deanleffingwell}.
+
     \begin{figure}[!htbp]
     \centering
     \includegraphics[scale=3.0]{figuras/Fases_do_RUP_-_portugues}
     \caption[Fases do RUP]{Fases do RUP. \footnotemark}
     \label{fases-rup}
   \end{figure}
-Este processo é composto de duas dimensões:
+Este processo é abstraído em duas dimensões estruturais:
 \begin{itemize}
 \item O eixo horizontal representa o tempo dividido nas fases do processo 	(Iniciação, Elaboração, Construção e Transição). Diz 	respeito ao aspecto dinâmico do processo quando ele é aprovado.
 \item O eixo vertical representa os aspectos estáticos do processo, as 	disciplinas, fluxos de trabalho, papéis, atividades e artefatos. 	[WTHREEX]
 \end{itemize}
 
-O objetivo do RUP é produzir software de alta qualidade atendendo as necessidades do projeto em um cronograma e orçamento previsíveis.
+Segundo Sommerville, o RUP aborda as melhores práticas verificadas empiricamente ao longo do tempo para o desenvolvimento de software~\cite{sommerville}:
+
+\begin{description}
+\item[1. Desenvolver o software iterativamente:] trabalhar com incrementos de \textit{software} com baseando-se na atribuição de prioridades para determinadas funcionalidades, entregando o mais cedo possível as características de sistema de maior prioridade no processo de desenvolvimento.
+\item[2. Gerenciar requisitos:] manter um processo de documentação sistemática dos requisitos do cliente e gerenciar mudanças nesses requisitos, avaliando o impacto geral dessas alterações antes de aceitá-las.
+\item[3. Arquiteturas baseadas em componentes:] Estruturar a arquitetura do sistema com componentes, modularizando e reduzindo a quantidade de software a ser desenvolvido e, consequentemente, diminuindo custos e riscos.
+\item[4. Modelar software visualmente:] usar modelos gráficos de UML para apresentar as visões estática e dinâmica do \textit{software}, de modo a alinhar a visão dos envolvidos no projeto, reduzindo os riscos de uma solução que não seja condizente com o real problema.
+\item[5. Verificar a qualidade do software:] garantir que o software atenda aos padrões de qualidade exigidos pelo mercado de acordo com a organização.
+\item[6. Gerenciar as mudanças do software:] controlar as mudanças no \textit{software}, fazendo o uso de procedimentos e ferramentas de gerenciamento de configuração de modo a reduzir os riscos e manter a viabilidade da construção da aplicação dentro dos prazos e custos estabelecidos.
+\end{description}
+
+Tomando como base essas características, a aplicabilidade do RUP como processo base para o suporte de novos projetos pode ser conseguida de várias maneiras. Uma delas seria usar o RUP à risca, isto é, seguir todos os métodos e processos única e exclusivamente como são propostos. O ponto positivo desta abordagem é que se nada é alterado, o RUP é essencialmente completo e detalhado. Entratanto, existe um preço muito alto a ser pago, este diz respeito à sua complexidade por vezes desnecessária. Esta abordagem automaticamente aumentaria os custos em treinamentos, projetos piloto, e algumas atividades, sendo este um fator chave para inviabilizar a aplicação pura do RUP em uma série de projetos.
+
+Outra maneira seria a adoção de outro modelo de processo mais simples que utiliza parcialmente o material do RUP como fonte de referência complementar, adequando o processo tradicional ao escopo do projeto. Desse modo, o RUP pode fazer parte de uma escolha viável para pequenos projetos e equipes assim como a apresentada neste documento.
+
   \section{Modelo de maturidade}
   Os modelos de maturidade de processos são um referencial usado para:
 \begin{itemize}
