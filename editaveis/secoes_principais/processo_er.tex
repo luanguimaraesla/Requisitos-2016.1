@@ -1,7 +1,22 @@
 \chapter[Processo da Engenharia de Requisitos]{Processo da Engenharia de Requisitos}
-O processo descrito a seguir foi modelado na ferramenta "Bizagi BPMN Modeler". Como dito anteriormente a abordagem a ser utilizada será uma abordagem ágil, fundamentada no SAFe(Scaled Agile Framework).
+O processo descrito a seguir foi modelado na ferramenta Bizagi BPMN Modeler. Esta ferramenta foi escolhida após uma comparação com a ferramenta Bonita BPM, levando em conta critérios como popularidade, acessibilidade e funcionalidades disponíveis para o desenvolvimento do projeto.
 
-A estrutura dos três níveis do SAFe foi mantida porque, segundo Leffingwell(2011), ao ir baixando o nível de abstração dos requisitos mais gradativamente, é reduzido o nível de especificação precoce, reduzindo a sobrecarga ao gerenciar os requisitos. Isso também aumenta a agilidade do time por permitir a interpretação dos requisitos de maneira mais fácil para a implementação.(Leffingwell, 2011)
+Como dito anteriormente a abordagem a ser utilizada será uma abordagem ágil, fundamentada no SAFe (Scaled Agile Framework), utilizando os três níveis principais: Portfolio, Programa e Time. O nível de Fluxo de Valor não será utilizado por se entender que não há necessidade deste nível neste projeto.
+
+A estrutura dos três níveis do SAFe foi mantida porque, segundo Leffingwell (2011), ao diminuir nível de abstração dos requisitos gradativamente, diminui também o nível de especificação precoce, reduzindo a sobrecarga ao gerenciar os requisitos. Isso também aumenta a agilidade do time por permitir a interpretação dos requisitos de maneira mais fácil para a implementação.
+
+A gestão da rastreabilidade dos requisitos é de suma importância para a manutenção desse processo. Todavia, o SAFe não define consistentemente a manutenibilidade entre seus três níveis, refletindo em uma escolha da equipe por adotar atividades de gerência de mudanças do RUP. Essa abordagem é explicada na Seção [SEÇÃO]. É importante dizer que o SAFe considera sim a mutabilidade dos requisitos e que essa escolha é uma maneira encontrada para lidar com essas mudanças e seus respectivos riscos da melhor forma possível.
+
+Um fator determinante para a aplicabilidade do SAFe a uma equipe mínima e um projeto de pequeno porte, é a consistência na seleção dos papeis que vão compor o processo. De acordo com a análise da viabilidade de tempo e recursos, do problema proposto e do cliente, foram estabelecidos os seguintes papéis:
+
+\begin{description}
+\item[Especialista do Negócio] É o stakeholder que detém o conhecimento do negócio, do contexto organizacional e da visão do produto.    
+\item[Product Owner (P.O.)] É o membro do time que fica responsável pela definição das histórias e pela priorização do Team Backlog, além de participar do planejamento e validação da sprint definindo os seus objetivos.
+\item[Product Manager (P.M.)] De acordo com Leffingwell(2011), cabe ao P.M.: manter a visão e o program backlog, priorizar features, manter o roadmap, gerenciar o conteúdo da release e manter e priorizar o porfolio backlog. As atividades realizadas pelo P.M. acontecem nos níveis Portfolio e Program.
+\item[Scrum Master] Seu papel é dar assistência para o resto da equipe a fim de extrair a máxima perfomance, ele é de certa forma o líder do time(Leffingwell, 2011).
+\item[Time] É composto por toda a equipe, desenvolvedores, designers e etc.
+\end{description}
+
 \section{Big picture do processo}
   \begin{figure}[!htbp]
     \centering
@@ -10,15 +25,7 @@ A estrutura dos três níveis do SAFe foi mantida porque, segundo Leffingwell(20
     \label{processo}
   \end{figure}
 \section{Papéis}
-\textbf{Especialista do negócio} - É o \textit{stakeholder} que detém o conhecimento do negócio, do contexto organizacional e da visão do produto.
 
-\textbf{Product owner} - É o membro do time que fica responsável pela definição das histórias e pela priorização do 
-\textit{team backlog}, além de participar do planejamento e validação da sprint, definindo os seus objetivos.
-
-\textbf{Product Manager} - De acordo com Leffingwell(2011), cabe ao PM: manter a visão e o program backlog, priorizar features, manter o roadmap, gerenciar o conteúdo da release e manter e priorizar o porfolio backlog. As atividades realizadas pelo PM acontecem nos níveis Portfolio e Program.
-
-\textbf{Scrum Master} - O papel do Scrum Master é dar assistência para o resto da equipe, aplicando os príncipios da metodologia em questão, a fim de extrair máxima perfomance. Ele é, de certa forma, o líder do time. (Leffingwell, 2011)
-\textbf{Time} - O time é composto por toda a equipe: desenvolvedores, designers e etc.
 \section{Artefatos}
 \textbf{Temas de investimento} - Representam um conjunto de iniciativas guias para o investimento da instituição, seja em sistemas, produtos, aplicações ou serviços(Leffingwell, 2011).
 
