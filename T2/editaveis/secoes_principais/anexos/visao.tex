@@ -36,7 +36,8 @@
       A qualidade modular do produto reflete automaticamente em uma documentação completa de uma eficiente interface de comunicação, de forma que todos os outros módulos que necessitarem de qualquer interação com os clientes façam uso unica e exclusivamente dessa interface através de requisições.
       Prioritariamente o sistema conterá um espaço para o cadastro e a manutenção de contas de acesso para clientes contendo informações importantes para a identificação, pagamentos e envios de produtos.
       O canal de comunicação seguirá o padrão de outras empresas e é feito via e-mail através da própria interface. Esse canal poderá ser acessado por outros módulos de forma que a comunicação com o cliente, para qualquer finalidade, seja feita apenas via o canal mencionado. Da mesma forma, haverá um mecanismo seguro e único para pagamentos de qualquer espécie dentro do sistema, este será implementado a partir da integração com o sistema Pag Seguro da UOL. Qualquer pagamento dentro do sistema, seja de produtos ou serviços, deve utilizar a interface com esse módulo para ser efetuado.
-      Haverá uma interface genérica adaptativa 
+      Haverá uma interface genérica adaptativa para que a solicitação de serviços e produtos por parte do cliente seja realizada através do módulo. Para isso, é necessário uma interface de usuário para que o cliente consiga acompanhar suas solicitações e para que a empresa consiga manter o controle de todos os seus prazos e prioridades de entrega.
+      Toda a comunicação com o módulo será baseada em requisições, restringindo o acesso ao banco de dados apenas a este módulo. 
     \subsection{Sentença de Posição do Produto} 
 
       % ========================== Tabela de Sentença de Posição do produto ==========================
