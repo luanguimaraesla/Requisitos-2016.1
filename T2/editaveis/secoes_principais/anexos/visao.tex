@@ -2,6 +2,7 @@
   \section{Introdução}
     \subsection{Finalidade}
       Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas. 
+
     \subsection{O Problema}
       A Eletronjun foi fundada em 2013 como Empresa Júnior pioneira na Faculdade do Gama da Universidade de Brasília e desde então desempenha importante papel na divulgação da cultura empreendedora entre os alunos do curso de Engenharia Eletrônica. Diversos projetos estão em andamento, como sensores de monitoramento para equoterapia, impressoras 3D e a construção de um laboratório de prototipação que auxiliará o desenvolvimento de projetos em todo a faculdade.
       Todo esse empenho para se consolidar como uma empresa competitiva tem mostrado resultados, ampliando os horizontes e renovando ambiciosamente os seus objetivos.
@@ -13,11 +14,9 @@
     \subsection{Tema de Investimento}
       A partir das reuniões realizadas com a empresa, o Tema de Investimento verificado foi o gerenciamento dos clientes e suas interações com a empresa. Esta nova abordagem propiciará um melhor controle da interação dos clientes, prazos, despesas, necessidades, movimentações financeiras o que aumentará tanto a satisfação dos clientes quanto a produtividade da empresa.
 
-
     \subsection{Diagrama de Causa e Efeito}
       Também conhecido como \textit{Fishbone} é uma eficiente maneira de segmentação e compreensão de um problema, fornecendo um mecanismo recursivo paradividi-lo em problemas menores até que as causas raízes, ou seja, os problemas-chave que geraram os demais sejam identificados.
     \textbf{[TODO]Colocar Imagem do Diagrama Fishbone}
-
 
     \subsection{Formulação do Problema}
 
@@ -26,7 +25,7 @@
       \newcolumntype{s}{>{\hsize=.3\hsize}X}
       \newcolumntype{t}{>{\hsize=.4\hsize}X}
       
-      % ========================== Tabela Formulação do Problema ==========================
+      % Tabela Formulação do Problema
       \begin{table}[!htbp]
         \centering
         \caption{Formulação do Problema}
@@ -39,10 +38,7 @@
             Uma boa solução seria  & Um módulo de \textit{software} que fosse responsável por integrar os clientes, os projetos e a empresa que deve gerenciar desde a comunicação e os pagamentos até a solicitação de serviços.                                                                        \\ \hline
         \end{tabularx}
       \end{table}
-      % ==================== Fim da Tabela Formulação do Problema =========================
      
-
-
     \subsection{Escopo}
       O \textit{software} será um módulo que fará parte de um sistema completo de gerenciamento de pessoas, projetos, metas, agenda, produtos e serviços. Esse módulo tratará exclusivamente das necessidades da Eletronjun em relação ao gerenciamento de seus clientes fornecendo muito além de um canal de comunicação, funcionalidades para transações de pagamentos, solicitação de serviços e suporte ao cliente.
       A qualidade modular do produto reflete automaticamente em uma documentação completa de uma eficiente interface de comunicação, de forma que todos os outros módulos que necessitarem de qualquer interação com os clientes façam uso unica e exclusivamente dessa interface através de requisições.
@@ -51,14 +47,12 @@
       Haverá uma interface genérica adaptativa para que a solicitação de serviços e produtos por parte do cliente seja realizada através do módulo. Para isso, é necessário uma interface de usuário para que o cliente consiga acompanhar suas solicitações e para que a empresa consiga manter o controle de todos os seus prazos e prioridades de entrega.
       Toda a comunicação com o módulo será baseada em requisições, restringindo o acesso ao banco de dados apenas a este módulo. 
 
-
-
     \subsection{Sentença de Posição do Produto} 
 
-      % ========================== Tabela de Sentença de Posição do produto ==========================
+      % Tabela de Sentença de Posição do produto
       \begin{table}[!htbp]
         \centering
-        \caption{Formulação do Problema}
+        \caption{Sentença de Posição do Produto}
         \label{Formulação Do Problema}
         \begin{tabularx}{0.9\textwidth}{|>{\columncolor[HTML]{BBDAFF}}s |b|}
           \hline
@@ -70,13 +64,12 @@
             Nosso produto    & será projetado de acordo com as características da Eletronjun e de seus clientes, fornecendo uma experiência de gestão focada na agilidade, segurança e escalabilidade    \\ \hline
         \end{tabularx}
       \end{table}
-      % ==================== Fim da Tabela da Sentença de Posição do Produto =========================
 
   \section{Descrição dos Envolvidos e dos Usuários}
     \subsection{Resumo dos Stakeholders}
       \begin{table}[!htbp]
         \centering
-        \caption{Formulação do Problema}
+        \caption{Resumo dos Stakeholders}
         \label{Formulação Do Problema}
         \begin{tabularx}{0.9\textwidth}{|s|s|t|}
           \hline
