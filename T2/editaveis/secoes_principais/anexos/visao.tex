@@ -1,18 +1,19 @@
 \chapter{Visão}[Visão]
   \section{Introdução}
     \subsection{Finalidade}
-    Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas. 
+      Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas. 
     \subsection{O Problema}
-    A Eletronjun foi fundada em 2013 como Empresa Júnior pioneira na Faculdade do Gama da Universidade de Brasília e desde então desempenha importante papel na divulgação da cultura empreendedora entre os alunos do curso de Engenharia Eletrônica. Diversos projetos estão em andamento, como sensores de monitoramento para equoterapia, impressoras 3D e a construção de um laboratório de prototipação que auxiliará o desenvolvimento de projetos em todo a faculdade.
-    Todo esse empenho para se consolidar como uma empresa competitiva tem mostrado resultados, ampliando os horizontes e renovando ambiciosamente os seus objetivos.
-    Essa escalabilidade é tratada com seriedade pela atual gestão da empresa que decidiu investir a sua força de trabalho em um sistema moderno de gestão que integre empresários juniores, colaboradores, clientes, produtos, serviços e projetos. O objetivo é a construção de um \textit{software} altamente modularizado no qual cada um dos módulos possa interagir com os outros evitando qualquer duplicação de atribuições. A cada nova etapa que a empresa transpassar, módulos poderão ser criados ou evoluídos para sanar as novas necessidades.
-    Atualmente a Eletronjun se encontra em uma situação de dificuldade no gerenciamento dos seus clientes. A comunicação é feita exclusivamente via e-mail institucional, não há nenhum tipo de suporte ao cliente, os pagamentos são realizados através de depósitos bancários, a lista de clientes é mantida em documentos dispersos no Google Drive, etc. Essa dificuldade de lidar de forma eficiente com o cliente tem acarretado em possíveis prejuízos nos quais a empresa baseia seus argumentos para justificar a construção em \textit{software} de uma solução moderna e eficaz. A impressora 3D por exemplo, montada para auxiliar os alunos do curso na construção de seus protótipos está há dias ociosa e sem expectativa de ser ligada.
-    Outra enorme dificuldade em se visualizar o sistema como um todo. Não existe uma visão consistente das atuais e futuras necessidades, o que gera uma insegurança ao se pensar nas características de cada um dos módulos. Estes devem ser genéricos o suficiente para integrarem um sistema altamente dinâmico a partir de uma estratégia de comunicação intensa entre diferentes módulos do \textit{software}.
+      A Eletronjun foi fundada em 2013 como Empresa Júnior pioneira na Faculdade do Gama da Universidade de Brasília e desde então desempenha importante papel na divulgação da cultura empreendedora entre os alunos do curso de Engenharia Eletrônica. Diversos projetos estão em andamento, como sensores de monitoramento para equoterapia, impressoras 3D e a construção de um laboratório de prototipação que auxiliará o desenvolvimento de projetos em todo a faculdade.
+      Todo esse empenho para se consolidar como uma empresa competitiva tem mostrado resultados, ampliando os horizontes e renovando ambiciosamente os seus objetivos.
+      Essa escalabilidade é tratada com seriedade pela atual gestão da empresa que decidiu investir a sua força de trabalho em um sistema moderno de gestão que integre empresários juniores, colaboradores, clientes, produtos, serviços e projetos. O objetivo é a construção de um \textit{software} altamente modularizado no qual cada um dos módulos possa interagir com os outros evitando qualquer duplicação de atribuições. A cada nova etapa que a empresa transpassar, módulos poderão ser criados ou evoluídos para sanar as novas necessidades.
+      Atualmente a Eletronjun se encontra em uma situação de dificuldade no gerenciamento dos seus clientes. A comunicação é feita exclusivamente via e-mail institucional, não há nenhum tipo de suporte ao cliente, os pagamentos são realizados através de depósitos bancários, a lista de clientes é mantida em documentos dispersos no Google Drive, etc. Essa dificuldade de lidar de forma eficiente com o cliente tem acarretado em possíveis prejuízos nos quais a empresa baseia seus argumentos para justificar a construção em \textit{software} de uma solução moderna e eficaz. A impressora 3D por exemplo, montada para auxiliar os alunos do curso na construção de seus protótipos está há dias ociosa e sem expectativa de ser ligada.
+      Outra enorme dificuldade em se visualizar o sistema como um todo. Não existe uma visão consistente das atuais e futuras necessidades, o que gera uma insegurança ao se pensar nas características de cada um dos módulos. Estes devem ser genéricos o suficiente para integrarem um sistema altamente dinâmico a partir de uma estratégia de comunicação intensa entre diferentes módulos do \textit{software}.
     \subsection{Formulação do Problema}
 
       % Configurando o tamanho das colunas
       \newcolumntype{b}{>{\hsize=.7\hsize}X}
       \newcolumntype{s}{>{\hsize=.3\hsize}X}
+      \newcolumntype{t}{>{\hsize=.4\hsize}X}
       
       % ========================== Tabela Formulação do Problema ==========================
       \begin{table}[!htbp]
@@ -58,7 +59,21 @@
       % ==================== Fim da Tabela da Sentença de Posição do Produto =========================
 
   \section{Descrição dos Envolvidos e dos Usuários}
-    \subsection{Resumo dos Envolvidos}
+    \subsection{Resumo dos Stakeholders}
+      \begin{table}[!htbp]
+        \centering
+        \caption{Formulação do Problema}
+        \label{Formulação Do Problema}
+        \begin{tabularx}{0.9\textwidth}{|s|s|t|}
+          \hline
+            \textbf{Nome}             &     \textbf{Descrição}     &   \textbf{Responsabilidades} \\ \hline
+            Especialista do Negócio   & O projeto necessita de uma pessoa para manter consistente a visão do produto & Detém o conhecimento do negócio, do contexto organizacional e da visão do produto  \\ \hline
+            Product Owner (P.O.)      & Membro da empresa Eletronjun responsável que personifica os interesses da empresa durante o processo da construção do \textit{software} & É o membro da equipe que fica responsável pela definição das histórias e pela priorização do Team Backlog, além de participar do planejamento e validação da sprint definindo os seus objetivos   \\ \hline
+            Product Manager (P.M.)    & facilitarão e agilizarão de forma significativa o controle das interações com os clientes   \\ \hline
+            Scrum Master              & se utilizar ferramentas dispersas e genéricas que não correspondem a totalidade das principais necessidades da empresa   \\ \hline
+            Time                      & será projetado de acordo com as características da Eletronjun e de seus clientes, fornecendo uma experiência de gestão focada na agilidade, segurança e escalabilidade    \\ \hline
+        \end{tabularx}
+      \end{table}
     \subsection{Resumo dos Usuários}
     \subsection{Principais Necessidades dos Usuários}
     \subsection{Alternativas e Concorrência}
