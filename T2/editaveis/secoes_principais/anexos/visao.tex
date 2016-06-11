@@ -1,7 +1,7 @@
 \chapter{Visão}
   \section{Introdução}
     \subsection{Finalidade}
-Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas. 
+Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas.
 
     \subsection{O Problema}
 A Eletronjun foi fundada em 2013 como Empresa Júnior pioneira na Faculdade do Gama da Universidade de Brasília e desde então desempenha importante papel na divulgação da cultura empreendedora entre os alunos do curso de Engenharia Eletrônica. Diversos projetos estão em andamento como a utilização de impressoras 3D e a construção de um laboratório de prototipação que auxiliará o desenvolvimento de projetos em todo a faculdade.
@@ -38,7 +38,7 @@ Também conhecido como \textit{Fishbone} é uma eficiente maneira de segmentaç�
       \newcolumntype{b}{>{\hsize=.7\hsize}X}
       \newcolumntype{s}{>{\hsize=.3\hsize}X}
       \newcolumntype{t}{>{\hsize=.4\hsize}X}
-      
+
       % Tabela Formulação do Problema
       \begin{table}[!htbp]
         \centering
@@ -52,7 +52,7 @@ Também conhecido como \textit{Fishbone} é uma eficiente maneira de segmentaç�
             Uma boa solução seria  & Um módulo de \textit{software} que fosse responsável por integrar os clientes, os projetos e a empresa, que deve gerenciar desde a comunicação e os pagamentos até a solicitação de serviços.                                                                        \\ \hline
         \end{tabularx}
       \end{table}
-     
+
     \subsection{Escopo}
 O \textit{software} será um módulo que fará parte de um sistema completo de gerenciamento de pessoas, projetos, metas, agenda, produtos e serviços. Esse módulo tratará exclusivamente das necessidades da Eletronjun em relação ao gerenciamento de seus clientes fornecendo muito além de um canal de comunicação, funcionalidades para transações de pagamentos, solicitação de serviços e suporte ao cliente.
 
@@ -64,9 +64,9 @@ O canal de comunicação seguirá o padrão de outras empresas e é feito via e-
 
 Haverá uma interface genérica adaptativa para que a solicitação de serviços e produtos por parte do cliente seja realizada através do módulo. Para isso, é necessário uma interface de usuário para que o cliente consiga acompanhar suas solicitações e para que a empresa consiga manter o controle de todos os seus prazos e prioridades de entrega.
 
-Toda a comunicação com o módulo será baseada em requisições, restringindo o acesso ao banco de dados apenas a este módulo. 
+Toda a comunicação com o módulo será baseada em requisições, restringindo o acesso ao banco de dados apenas a este módulo.
 
-    \subsection{Sentença de Posição do Produto} 
+    \subsection{Sentença de Posição do Produto}
 
       % Tabela de Sentença de Posição do produto
       \begin{table}[!htbp]
@@ -129,7 +129,7 @@ O componente de \textit{software} deve ser projetado sobre as principais necessi
       \begin{itemize}
         \item Falta uma plataforma na qual os clientes da Eletronjun possam se cadastrar e manter seus dados atualizados por conta própria, evitando a sobrecarga de trabalho ao se manter tabelas manuais com as informações necessárias.
         \item Existe a necessidade de uma plataforma de comunicação não genérica, ou seja, adaptada ao contexto dos clientes da Eletronjun, para que estes possam realizar suas solicitações, retirar suas dúvidas e fazer sugestões, e tudo isso seja facilmente rastreável pela empresa.
-        \item Falta de um ambiente auto gerenciável no qual os pedidos, solicitações de orçamento e serviços sejam mantidas de forma organizada, rastreável e automática. 
+        \item Falta de um ambiente auto gerenciável no qual os pedidos, solicitações de orçamento e serviços sejam mantidas de forma organizada, rastreável e automática.
         \item Os próprios clientes da Eletronjun devem poder manter o controle sobre seus pedidos, de forma a acompanhar tudo que diz respeito ao andamento, pagamento, transporte, dúvidas, etc.
         \item Não há atualmente um canal de atendimento ao cliente especializado, os assuntos são tratados via email.
         \item Falta um mecanismo específico e padronizado para lidar com o gerenciamento dos pagamentos de produtos e serviços de forma automatizada.
@@ -158,7 +158,7 @@ Adentrando na solução propriamente dita, o componente será formado por quatro
       \end{description}
 
     \subsection{Principais Capacidades}
-      
+
       % Tabela das principais capacidades
       \begin{table}[!htbp]
         \centering
