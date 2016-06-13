@@ -137,7 +137,21 @@ Diversas empresas possuem \textit{softwares} internos que lidam com o gerenciame
 Outra discussão importante é que este projeto se trata da construção de um módulo que será integrado em uma ferramenta muito maior, isso automaticamente exclui da lista de alternativas a maioria das opções existentes, já que essas quase certamente não apresentarão uma interface de comunicação coerente com os demais módulos que estão sendo construídos paralelamente a este.
 
   \section{Perspectiva do Produto}
+Esta Seção apresenta uma ideia resumida do que será a solução. Para a elaboração de tal foram levadas em consideração principalmente as necessidades e os objetivos da empresa, as prioridades apresentadas pelo cliente, os recursos financeiros disponíveis, o tempo para se produzir o \textit{software} e as limitações apresentadas na Seção \ref{limit}.
 
     \subsection{Descrição da Solução}
+A solução é a construção de um componente de \textit{software} altamente adaptativo, ou seja, que possui uma interface de comunicação genérica para que outros módulos façam uso de seus recursos. Todos esses recursos acessíveis deverão ser minuciosamente documentados, de forma que os demais desenvolvedores não sintam dificuldades na utilização de suas funções.
+
+O módulo será uma junção de funcionalidades que permitem o gerenciamento eficiente dos clientes da Eletronjun de acordo com as características da empresa. Toda e qualquer interação com os clientes deverá ser feita através deste módulo, isto é, os módulos devem atuar através da emissão e atendimento de requisições de outros módulos. Isso pode ser interpretado com um barramento em alto nível, na camada de software. \textit{Softwares} livres como o Colab são capazes de gerenciar esse tipo de mecanismos.
+
+Adentrando na solução propriamente dita, o componente será formado por quatro partes fundamentais e elas serão responsáveis por tratar os seguintes aspéctos:
+
+      \begin{description}
+        \item[Manutenção de Clientes] O gerenciamento do cadastro e da atualização das informações de cada cliente poderá ser realizado pelo mesmo, sem a necessidade do trabalho de um membro da empresa. Nesse componente da solução podem ser implementadas funcionalidades automáticas para por exemplo, propor produtos e serviços de acordo com as características de cada cliente.
+        \item[Comunicação] Qualquer comunicação com o cliente será realizada através desse componente da solução. Outros módulos poderão, através de requisições, se comunicar com os clientes. O cliente continuará sendo contactado via email, porém, ao entrar na interface online da ferramenta geral da Eletronjun, poderá ter acesso a todo histórico de diálogo, solicitações, dúvidas, etc.
+        \item[Pagamentos] Qualquer tipo de pagamento também será realizado através da utilização do presente módulo. Os tipos de pagamento, tanto para serviço quanto para produtos serão padronizados para garantir uma experiência de qualidade aos usuários e um melhor controle do fluxo de caixa da empresa. Será possível para os envolvidos o acompanhamento do estado da transferência.
+        \item[Gerenciamento de Pedidos] Os pedidos serão organizados automaticamente, podendo a cada um ser atribuído um nível de prioridade. O cliente poderá gerenciar e acompanhar suas solicitações por serviços ou produtos, assim como um histórico completo de compras. A empresa poderá acompanhar uma lista completa de pedidos de acordo com prazos, prioridade ou outras características atribuídas aos produtos e serviços.
+      \end{description}
+
     \subsection{Principais Capacidades}
-  \section{Limitações} 
+  \section{Limitações} \label{limit}
