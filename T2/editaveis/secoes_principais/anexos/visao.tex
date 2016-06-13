@@ -68,7 +68,7 @@ Toda a comunicação com o módulo será baseada em requisições, restringindo 
       \begin{table}[!htbp]
         \centering
         \caption{Sentença de Posição do Produto}
-        \label{Formulação Do Problema}
+        \label{Sentença de Posição do Produto}
         \begin{tabularx}{0.9\textwidth}{|>{\columncolor[HTML]{BBDAFF}}s |b|}
           \hline
             Para             & A Empresa Júnior Eletronjun   \\ \hline
@@ -80,23 +80,45 @@ Toda a comunicação com o módulo será baseada em requisições, restringindo 
         \end{tabularx}
       \end{table}
 
+\newpage
   \section{Descrição dos Envolvidos e dos Usuários}
     \subsection{Resumo dos Stakeholders}
+Os envolvidos no projeto são aqueles personagens que serão diretamente afetados e contribuirão diretamente para a tomada de decisões que levarão a concepção e a construção do \textit{software}. Podem não ser considerados os usuários diretos da ferramenta, os quais estão listados na Seção \ref{res_usuarios}, porém terão papéis bem definidos no processo de desenvolvimento do componente.
+
+A abordagem ágil fornece uma série de papéis e responsabilidades que podem ser adaptadas ao contexto do projeto. Levando em consideração as discussões apresentadas durante a escolha da metodologia na fase de modelagem do processo, a Tabela \ref{Resumo dos Stakeholders} descreve a lista de envolvidos no projeto.
+
       \begin{table}[!htbp]
         \centering
         \caption{Resumo dos Stakeholders}
-        \label{Formulação Do Problema}
+        \label{Resumo dos Stakeholders}
         \begin{tabularx}{0.9\textwidth}{|s|s|t|}
           \hline
             \textbf{Nome}             &     \textbf{Descrição}     &   \textbf{Responsabilidades} \\ \hline
-            Especialista do Negócio   & O projeto necessita de uma pessoa para manter consistente a visão do produto & Detém o conhecimento do negócio, do contexto organizacional e da visão do produto  \\ \hline
-            Product Owner (P.O.)      & Membro da empresa Eletronjun responsável que personifica os interesses da empresa durante o processo da construção do \textit{software} & É o membro da equipe que fica responsável pela definição das histórias e pela priorização do Team Backlog, além de participar do planejamento e validação da sprint definindo os seus objetivos   \\ \hline
-            Product Manager (P.M.)    & facilitarão e agilizarão de forma significativa o controle das interações com os clientes   \\ \hline
-            Scrum Master              & se utilizar ferramentas dispersas e genéricas que não correspondem a totalidade das principais necessidades da empresa   \\ \hline
-            Time                      & será projetado de acordo com as características da Eletronjun e de seus clientes, fornecendo uma experiência de gestão focada na agilidade, segurança e escalabilidade    \\ \hline
+           \textbf{Especialista do Negócio}   & O projeto necessita de uma pessoa para manter consistente a visão do produto & Detém o conhecimento do negócio, do contexto organizacional e da visão do produto  \\ \hline
+           \textbf{Product Owner (P.O.)}      & Membro da empresa Eletronjun responsável que personifica os interesses da empresa durante o processo da construção do \textit{software} & É o membro da equipe que fica responsável pela definição das histórias e pela priorização do Team Backlog, além de participar do planejamento e validação da sprint definindo os seus objetivos   \\ \hline
+           \textbf{Product Manager (P.M.)}    & Facilita e agiliza de forma significativa a manutenção dos interesses da empresa e da equipe de desenvolvimento & Manter a visão e o Program Backlog, priorizar features, manter o Roadmap, gerenciar o conteúdo da Release e manter e priorizar o Porfolio Backlog. As atividades realizadas pelo P.M. acontecem nos níveis Portfolio e Programa. \\ \hline
+           \textbf{Scrum Master}              & Lider do time ágil & Seu papel é dar assistência para o resto da equipe a fim de extrair o máximo rendimento de cada um dos membros  \\ \hline
+           \textbf{Time}                      & É composto por toda a equipe, desenvolvedores, designers e etc. & Desenvolver uma solução viável para o problema do cliente de acordo com os fatores limitantes de um projeto, como recursos e tempo   \\ \hline
         \end{tabularx}
       \end{table}
-    \subsection{Resumo dos Usuários}
+
+    \subsection{Resumo dos Usuários} \label{res_usuarios}
+A ideia de um componente de \textit{software} modularizado que irá interagir com diversos outros plugins expande de forma não dimensionável os possíveis usuários da ferramenta, já que a empresa, em alguma nova política de investimento, pode optar por gerenciar serviços ou tipos de usuários não previstos durante o desenvolvimento deste módulo. Tomando isso como premissa, é necessário construir o componente sobre tipos de usuários genéricos que contenham informações úteis para diversos objetivos que a empresa poderá se interessar no futuro.
+
+      \begin{table}[!htbp]
+        \centering
+        \caption{Resumo dos Usuários}
+        \label{Resumo dos Usuários}
+        \begin{tabularx}{0.9\textwidth}{|s|s|t|}
+          \hline
+            \textbf{Nome}                   &     \textbf{Descrição}     &   \textbf{Responsabilidades} \\ \hline
+            \textbf{Gerentes de Projetos}   &  Membros da empresa responsáveis por gerenciar cada um dos projetos  &  Recebem as solicitações, pedidos de orçamento, dúvidas sobre os projetos. Acompanham prazos e avaliam riscos de acordo com as metas e recursos da empresa  \\ \hline
+            \textbf{Clientes}               & Pessoas interessadas nos produtos e serviços da Eletronjun & Entram em contato com a empresa para solicitar orçamentos, prazos, retirar dúvidas, fazer sugestões. São o alvo de grande parte das políticas de investimento da empresa.   \\ \hline
+            \textbf{Desenvolvedores}        & Por se tratar de uma ferramenta modularizada, serão as equipes que desenvolverão os demais módulos e lerão com atenção a documentação do módulo de gestão de clientes & Desenvolver módulos para o \textit{software} de gestão da Eletronjun \\ \hline
+            \textbf{Funcionários da Eletronjun} & Membros da empresa que desejam informações sobre os clientes para realizar levantamentos, pesquisas de opinião, etc. & Acessam as informações e gráficos gerados a partir das informações dos clientes \\ \hline
+        \end{tabularx}
+      \end{table}
+
     \subsection{Principais Necessidades dos Usuários}
     \subsection{Alternativas e Concorrência}
   \section{Perspectiva do Produto}
