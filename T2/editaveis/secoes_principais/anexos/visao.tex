@@ -1,13 +1,37 @@
 \chapter{Visão}
   \section{Introdução}
     \subsection{Finalidade}
-      Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas. 
+Este documento contém os fatores mais relevantes que descreve as necessidades em relação à construção da plataforma de gerenciamento de clientes da empresa Júnior Eletronjun de Engenharia Eletrônica da Universidade de Brasília. Esse documento foi produzido a partir de reuniões com o representante encarregado da empresa com os membros do time ágil e nele são apresentadas todas as principais características, finalidades e motivações para o desenvolvimento do sistema, assim como as limitações envolvidas. 
+
     \subsection{O Problema}
-      A Eletronjun foi fundada em 2013 como Empresa Júnior pioneira na Faculdade do Gama da Universidade de Brasília e desde então desempenha importante papel na divulgação da cultura empreendedora entre os alunos do curso de Engenharia Eletrônica. Diversos projetos estão em andamento, como sensores de monitoramento para equoterapia, impressoras 3D e a construção de um laboratório de prototipação que auxiliará o desenvolvimento de projetos em todo a faculdade.
-      Todo esse empenho para se consolidar como uma empresa competitiva tem mostrado resultados, ampliando os horizontes e renovando ambiciosamente os seus objetivos.
-      Essa escalabilidade é tratada com seriedade pela atual gestão da empresa que decidiu investir a sua força de trabalho em um sistema moderno de gestão que integre empresários juniores, colaboradores, clientes, produtos, serviços e projetos. O objetivo é a construção de um \textit{software} altamente modularizado no qual cada um dos módulos possa interagir com os outros evitando qualquer duplicação de atribuições. A cada nova etapa que a empresa transpassar, módulos poderão ser criados ou evoluídos para sanar as novas necessidades.
-      Atualmente a Eletronjun se encontra em uma situação de dificuldade no gerenciamento dos seus clientes. A comunicação é feita exclusivamente via e-mail institucional, não há nenhum tipo de suporte ao cliente, os pagamentos são realizados através de depósitos bancários, a lista de clientes é mantida em documentos dispersos no Google Drive, etc. Essa dificuldade de lidar de forma eficiente com o cliente tem acarretado em possíveis prejuízos nos quais a empresa baseia seus argumentos para justificar a construção em \textit{software} de uma solução moderna e eficaz. A impressora 3D por exemplo, montada para auxiliar os alunos do curso na construção de seus protótipos está há dias ociosa e sem expectativa de ser ligada.
-      Outra enorme dificuldade em se visualizar o sistema como um todo. Não existe uma visão consistente das atuais e futuras necessidades, o que gera uma insegurança ao se pensar nas características de cada um dos módulos. Estes devem ser genéricos o suficiente para integrarem um sistema altamente dinâmico a partir de uma estratégia de comunicação intensa entre diferentes módulos do \textit{software}.
+A Eletronjun foi fundada em 2013 como Empresa Júnior pioneira na Faculdade do Gama da Universidade de Brasília e desde então desempenha importante papel na divulgação da cultura empreendedora entre os alunos do curso de Engenharia Eletrônica. Diversos projetos estão em andamento como a utilização de impressoras 3D e a construção de um laboratório de prototipação que auxiliará o desenvolvimento de projetos em todo a faculdade.
+
+Todo esse empenho para se consolidar como uma empresa competitiva tem mostrado resultados, ampliando os horizontes e renovando ambiciosamente os seus objetivos.
+
+Essa escalabilidade é tratada com seriedade pela atual gestão da empresa que decidiu investir a sua força de trabalho em um sistema moderno de gestão que integre empresários juniores, colaboradores, clientes, produtos, serviços e projetos. O objetivo é a construção de um \textit{software} altamente modularizado no qual cada um dos módulos possa interagir com os outros evitando qualquer duplicação de atribuições. A cada nova etapa que a empresa transpassar, módulos poderão ser criados ou evoluídos para sanar as novas necessidades.
+
+Atualmente a Eletronjun se encontra em uma situação de dificuldade no gerenciamento dos seus clientes. A comunicação é feita exclusivamente via e-mail institucional, não há nenhum tipo de suporte ao cliente, os pagamentos são realizados através de depósitos bancários, a lista de clientes é mantida em documentos dispersos no Google Drive, etc. Essa dificuldade de lidar de forma eficiente com o cliente tem acarretado em possíveis prejuízos nos quais a empresa baseia seus argumentos para justificar a construção em \textit{software} de uma solução moderna e eficaz. A impressora 3D por exemplo, montada para auxiliar os alunos do curso na construção de seus protótipos está há dias ociosa e sem expectativa de ser ligada.
+
+Outra enorme dificuldade em se visualizar o sistema como um todo. Não existe uma visão consistente das atuais e futuras necessidades, o que gera uma insegurança ao se pensar nas características de cada um dos módulos. Estes devem ser genéricos o suficiente para integrarem um sistema altamente dinâmico a partir de uma estratégia de comunicação intensa entre diferentes módulos do \textit{software}.
+
+  \section{Abordagem do Problema}
+    \subsection{Tema de Investimento}
+A partir das reuniões realizadas com a empresa, o Tema de Investimento verificado foi o gerenciamento dos clientes e suas interações com a empresa. Esta nova abordagem propiciará um melhor controle da interação dos clientes, prazos, despesas, necessidades, movimentações financeiras o que aumentará tanto a satisfação dos clientes quanto a produtividade da empresa.
+
+    \subsection{Diagrama de Causa e Efeito}
+Também conhecido como \textit{Fishbone} é uma eficiente maneira de segmentação e compreensão de um problema, fornecendo um mecanismo recursivo paradividi-lo em problemas menores até que as causas raízes, ou seja, os problemas-chave que geraram os demais sejam identificados.
+
+\clearpage
+
+      \begin{figure}[!htbp]
+        \centering
+        \includegraphics[width=1.5\textwidth, keepaspectratio, angle=90]{figuras/Fishbone}
+        \caption{Diagrama de Causa e Efeito}
+        \label{cronograma}
+      \end{figure}
+
+\clearpage
+
     \subsection{Formulação do Problema}
 
       % Configurando o tamanho das colunas
@@ -15,37 +39,40 @@
       \newcolumntype{s}{>{\hsize=.3\hsize}X}
       \newcolumntype{t}{>{\hsize=.4\hsize}X}
       
-      % ========================== Tabela Formulação do Problema ==========================
+      % Tabela Formulação do Problema
       \begin{table}[!htbp]
         \centering
         \caption{Formulação do Problema}
         \label{Formulação Do Problema}
         \begin{tabularx}{0.9\textwidth}{|>{\columncolor[HTML]{BBDAFF}}s |b|}
           \hline
-            O problema é           & Gerenciamento ineficiente de clientes                               \\ \hline
+            O problema é           & Gerenciamento não automatizado e não escalável de clientes realizado em ferramentas genéricas que não condizem com a realidade da empresa \\ \hline
             Afeta                  & Os próprios clientes e a empresa                                    \\ \hline
-            Cujo impacto é         & Prejuízos em relação aos projetos e imagem da empresa no mercado    \\ \hline
-            Uma boa solução seria  & Um módulo de \textit{software} que fosse responsável por integrar os clientes, os projetos e a empresa que deve gerenciar desde a comunicação e os pagamentos até a solicitação de serviços.                                                                        \\ \hline
+            Cujo impacto é         & Prejuízos em relação aos projetos, demandas, satisfação do cliente e imagem da empresa no mercado; além da sobrecarga de trabalho manual na manutenção de tabelas genéricas de controle    \\ \hline
+            Uma boa solução seria  & Um módulo de \textit{software} que fosse responsável por integrar os clientes, os projetos e a empresa, que deve gerenciar desde a comunicação e os pagamentos até a solicitação de serviços.                                                                        \\ \hline
         \end{tabularx}
       \end{table}
-      % ==================== Fim da Tabela Formulação do Problema =========================
-
-  \section{Abordagem do Problema}
-
+     
     \subsection{Escopo}
-      O \textit{software} será um módulo que fará parte de um sistema completo de gerenciamento de pessoas, projetos, metas, agenda, produtos e serviços. Esse módulo tratará exclusivamente das necessidades da Eletronjun em relação ao gerenciamento de seus clientes fornecendo muito além de um canal de comunicação, funcionalidades para transações de pagamentos, solicitação de serviços e suporte ao cliente.
-      A qualidade modular do produto reflete automaticamente em uma documentação completa de uma eficiente interface de comunicação, de forma que todos os outros módulos que necessitarem de qualquer interação com os clientes façam uso unica e exclusivamente dessa interface através de requisições.
-      Prioritariamente o sistema conterá um espaço para o cadastro e a manutenção de contas de acesso para clientes contendo informações importantes para a identificação, pagamentos e envios de produtos.
-      O canal de comunicação seguirá o padrão de outras empresas e é feito via e-mail através da própria interface. Esse canal poderá ser acessado por outros módulos de forma que a comunicação com o cliente, para qualquer finalidade, seja feita apenas via o canal mencionado. Da mesma forma, haverá um mecanismo seguro e único para pagamentos de qualquer espécie dentro do sistema, este será implementado a partir da integração com o sistema Pag Seguro da UOL. Qualquer pagamento dentro do sistema, seja de produtos ou serviços, deve utilizar a interface com esse módulo para ser efetuado.
-      Haverá uma interface genérica adaptativa para que a solicitação de serviços e produtos por parte do cliente seja realizada através do módulo. Para isso, é necessário uma interface de usuário para que o cliente consiga acompanhar suas solicitações e para que a empresa consiga manter o controle de todos os seus prazos e prioridades de entrega.
-      Toda a comunicação com o módulo será baseada em requisições, restringindo o acesso ao banco de dados apenas a este módulo. 
+O \textit{software} será um módulo que fará parte de um sistema completo de gerenciamento de pessoas, projetos, metas, agenda, produtos e serviços. Esse módulo tratará exclusivamente das necessidades da Eletronjun em relação ao gerenciamento de seus clientes fornecendo muito além de um canal de comunicação, funcionalidades para transações de pagamentos, solicitação de serviços e suporte ao cliente.
+
+A qualidade modular do produto reflete automaticamente em uma documentação completa de uma eficiente interface de comunicação, de forma que todos os outros módulos que necessitarem de qualquer interação com os clientes façam uso unica e exclusivamente dessa interface através de requisições.
+
+Prioritariamente o sistema conterá um espaço para o cadastro e a manutenção de contas de acesso para clientes contendo informações importantes para a identificação, pagamentos e envios de produtos.
+
+O canal de comunicação seguirá o padrão de outras empresas e é feito via e-mail através da própria interface. Esse canal poderá ser acessado por outros módulos de forma que a comunicação com o cliente, para qualquer finalidade, seja feita apenas via o canal mencionado. Da mesma forma, haverá um mecanismo seguro e único para pagamentos de qualquer espécie dentro do sistema, este será implementado a partir da integração com o sistema Pag Seguro da UOL. Qualquer pagamento dentro do sistema, seja de produtos ou serviços, deve utilizar a interface com esse módulo para ser efetuado.
+
+Haverá uma interface genérica adaptativa para que a solicitação de serviços e produtos por parte do cliente seja realizada através do módulo. Para isso, é necessário uma interface de usuário para que o cliente consiga acompanhar suas solicitações e para que a empresa consiga manter o controle de todos os seus prazos e prioridades de entrega.
+
+Toda a comunicação com o módulo será baseada em requisições, restringindo o acesso ao banco de dados apenas a este módulo. 
+
     \subsection{Sentença de Posição do Produto} 
 
-      % ========================== Tabela de Sentença de Posição do produto ==========================
+      % Tabela de Sentença de Posição do produto
       \begin{table}[!htbp]
         \centering
-        \caption{Formulação do Problema}
-        \label{Formulação Do Problema}
+        \caption{Sentença de Posição do Produto}
+        \label{Sentença de Posição do Produto}
         \begin{tabularx}{0.9\textwidth}{|>{\columncolor[HTML]{BBDAFF}}s |b|}
           \hline
             Para             & A Empresa Júnior Eletronjun   \\ \hline
@@ -56,28 +83,104 @@
             Nosso produto    & será projetado de acordo com as características da Eletronjun e de seus clientes, fornecendo uma experiência de gestão focada na agilidade, segurança e escalabilidade    \\ \hline
         \end{tabularx}
       \end{table}
-      % ==================== Fim da Tabela da Sentença de Posição do Produto =========================
 
+\newpage
   \section{Descrição dos Envolvidos e dos Usuários}
     \subsection{Resumo dos Stakeholders}
+Os envolvidos no projeto são aqueles personagens que serão diretamente afetados e contribuirão diretamente para a tomada de decisões que levarão a concepção e a construção do \textit{software}. Podem não ser considerados os usuários diretos da ferramenta, os quais estão listados na Seção \ref{res_usuarios}, porém terão papéis bem definidos no processo de desenvolvimento do componente.
+
+A abordagem ágil fornece uma série de papéis e responsabilidades que podem ser adaptadas ao contexto do projeto. Levando em consideração as discussões apresentadas durante a escolha da metodologia na fase de modelagem do processo, a Tabela \ref{Resumo dos Stakeholders} descreve a lista de envolvidos no projeto.
+
       \begin{table}[!htbp]
         \centering
-        \caption{Formulação do Problema}
-        \label{Formulação Do Problema}
+        \caption{Resumo dos Stakeholders}
+        \label{Resumo dos Stakeholders}
         \begin{tabularx}{0.9\textwidth}{|s|s|t|}
           \hline
             \textbf{Nome}             &     \textbf{Descrição}     &   \textbf{Responsabilidades} \\ \hline
-            Especialista do Negócio   & O projeto necessita de uma pessoa para manter consistente a visão do produto & Detém o conhecimento do negócio, do contexto organizacional e da visão do produto  \\ \hline
-            Product Owner (P.O.)      & Membro da empresa Eletronjun responsável que personifica os interesses da empresa durante o processo da construção do \textit{software} & É o membro da equipe que fica responsável pela definição das histórias e pela priorização do Team Backlog, além de participar do planejamento e validação da sprint definindo os seus objetivos   \\ \hline
-            Product Manager (P.M.)    & Irão tornar mais facil e ágil o controle das interações com os clientes.   \\ \hline
-            Scrum Master              & Se utilizar ferramentas dispersas e genéricas que não correspondem a totalidade das principais necessidades da empresa   \\ \hline
-            Time                      & Será projetado de acordo com as características da Eletronjun e de seus clientes, fornecendo uma experiência de gestão focada na agilidade, segurança e escalabilidade    \\ \hline
+            \textbf{Especialista do Negócio}   & O projeto necessita de uma pessoa para manter consistente a visão do produto & Detém o conhecimento do negócio, do contexto organizacional e da visão do produto  \\ \hline
+            \textbf{Product Owner (P.O.)}      & Membro da empresa Eletronjun responsável que personifica os interesses da empresa durante o processo da construção do \textit{software} & É o membro da equipe que fica responsável pela definição das histórias e pela priorização do Team Backlog, além de participar do planejamento e validação da sprint definindo os seus objetivos   \\ \hline
+            \textbf{Product Manager (P.M.)}    & Facilita e agiliza de forma significativa a manutenção dos interesses da empresa e da equipe de desenvolvimento & Manter a visão e o Program Backlog, priorizar features, manter o Roadmap, gerenciar o conteúdo da Release e manter e priorizar o Porfolio Backlog. As atividades realizadas pelo P.M. acontecem nos níveis Portfolio e Programa. \\ \hline
+            \textbf{Scrum Master}              & Lider do time ágil & Seu papel é dar assistência para o resto da equipe a fim de extrair o máximo rendimento de cada um dos membros  \\ \hline
+            \textbf{Time}                      & É composto por toda a equipe, desenvolvedores, designers e etc. & Desenvolver uma solução viável para o problema do cliente de acordo com os fatores limitantes de um projeto, como recursos e tempo   \\ \hline
         \end{tabularx}
       \end{table}
-    \subsection{Resumo dos Usuários}
+
+    \subsection{Resumo dos Usuários} \label{res_usuarios}
+A ideia de um componente de \textit{software} modularizado que irá interagir com diversos outros plugins expande de forma não dimensionável os possíveis usuários da ferramenta, já que a empresa, em alguma nova política de investimento, pode optar por gerenciar serviços ou tipos de usuários não previstos durante o desenvolvimento deste módulo. Tomando isso como premissa, é necessário construir o componente sobre tipos de usuários genéricos que contenham informações úteis para diversos objetivos que a empresa poderá se interessar no futuro.
+
+      \begin{table}[!htbp]
+        \centering
+        \caption{Resumo dos Usuários}
+        \label{Resumo dos Usuários}
+        \begin{tabularx}{0.9\textwidth}{|s|s|t|}
+          \hline
+            \textbf{Nome}                   &     \textbf{Descrição}     &   \textbf{Responsabilidades} \\ \hline
+            \textbf{Gerentes de Projetos}   &  Membros da empresa responsáveis por gerenciar cada um dos projetos  &  Recebem as solicitações, pedidos de orçamento, dúvidas sobre os projetos. Acompanham prazos e avaliam riscos de acordo com as metas e recursos da empresa  \\ \hline
+            \textbf{Clientes}               & Pessoas interessadas nos produtos e serviços da Eletronjun & Entram em contato com a empresa para solicitar orçamentos, prazos, retirar dúvidas, fazer sugestões. São o alvo de grande parte das políticas de investimento da empresa.   \\ \hline
+            \textbf{Desenvolvedores}        & Por se tratar de uma ferramenta modularizada, serão as equipes que desenvolverão os demais módulos e lerão com atenção a documentação do módulo de gestão de clientes & Desenvolver módulos para o \textit{software} de gestão da Eletronjun \\ \hline
+            \textbf{Funcionários da Eletronjun} & Membros da empresa que desejam informações sobre os clientes para realizar levantamentos, pesquisas de opinião, etc. & Acessam as informações e gráficos gerados a partir das informações dos clientes \\ \hline
+        \end{tabularx}
+      \end{table}
+
     \subsection{Principais Necessidades dos Usuários}
+O componente de \textit{software} deve ser projetado sobre as principais necessidades dos usuários, levantadas utilizando técnicas como \textit{Brainstorming}, diagrama \textit{Fishbone} e reuniões com o cliente. A seguir estão listadas as principais necessidades dos clientes:
+
+      \begin{itemize}
+        \item Falta uma plataforma na qual os clientes da Eletronjun possam se cadastrar e manter seus dados atualizados por conta própria, evitando a sobrecarga de trabalho ao se manter tabelas manuais com as informações necessárias.
+        \item Existe a necessidade de uma plataforma de comunicação não genérica, ou seja, adaptada ao contexto dos clientes da Eletronjun, para que estes possam realizar suas solicitações, retirar suas dúvidas e fazer sugestões, e tudo isso seja facilmente rastreável pela empresa.
+        \item Falta de um ambiente auto gerenciável no qual os pedidos, solicitações de orçamento e serviços sejam mantidas de forma organizada, rastreável e automática. 
+        \item Os próprios clientes da Eletronjun devem poder manter o controle sobre seus pedidos, de forma a acompanhar tudo que diz respeito ao andamento, pagamento, transporte, dúvidas, etc.
+        \item Não há atualmente um canal de atendimento ao cliente especializado, os assuntos são tratados via email.
+        \item Falta um mecanismo específico e padronizado para lidar com o gerenciamento dos pagamentos de produtos e serviços de forma automatizada.
+      \end{itemize}
+
     \subsection{Alternativas e Concorrência}
+Diversas empresas possuem \textit{softwares} internos que lidam com o gerenciamento de seus clientes de maneira otimizada e integrada. Entretanto, o desenvolvimento dessas ferramentas é demasiadamente caro para os padrões de uma Empresa Júnior. Sendo assim, apenas ferramentas de controle de atividades e documentos genéricas como o Trello, Google Forms e Google Drive estão dentro dos padrões orçamentários da empresa. Contudo, várias dessas ferramentas já são utilizadas pela empresa e não solucionaram o problema. Isso é efeito direto da dificuldade de se manter ferramentas distintas constantemente atualizadas sem o suporte de nenhuma integração.
+
+Outra discussão importante é que este projeto se trata da construção de um módulo que será integrado em uma ferramenta muito maior, isso automaticamente exclui da lista de alternativas a maioria das opções existentes, já que essas quase certamente não apresentarão uma interface de comunicação coerente com os demais módulos que estão sendo construídos paralelamente a este.
+
   \section{Perspectiva do Produto}
+Esta Seção apresenta uma ideia resumida do que será a solução. Para a elaboração de tal foram levadas em consideração principalmente as necessidades e os objetivos da empresa, as prioridades apresentadas pelo cliente, os recursos financeiros disponíveis, o tempo para se produzir o \textit{software} e as limitações apresentadas na Seção \ref{limit}.
+
     \subsection{Descrição da Solução}
+A solução é a construção de um componente de \textit{software} altamente adaptativo, ou seja, que possui uma interface de comunicação genérica para que outros módulos façam uso de seus recursos. Todos esses recursos acessíveis deverão ser minuciosamente documentados, de forma que os demais desenvolvedores não sintam dificuldades na utilização de suas funções.
+
+O módulo será uma junção de funcionalidades que permitem o gerenciamento eficiente dos clientes da Eletronjun de acordo com as características da empresa. Toda e qualquer interação com os clientes deverá ser feita através deste módulo, isto é, os módulos devem atuar através da emissão e atendimento de requisições de outros módulos. Isso pode ser interpretado com um barramento em alto nível, na camada de software. \textit{Softwares} livres como o Colab são capazes de gerenciar esse tipo de mecanismos.
+
+Adentrando na solução propriamente dita, o componente será formado por quatro partes fundamentais e elas serão responsáveis por tratar os seguintes aspéctos:
+
+      \begin{description}
+        \item[Manutenção de Clientes] O gerenciamento do cadastro e da atualização das informações de cada cliente poderá ser realizado pelo mesmo, sem a necessidade do trabalho de um membro da empresa. Nesse componente da solução podem ser implementadas funcionalidades automáticas para por exemplo, propor produtos e serviços de acordo com as características de cada cliente.
+        \item[Comunicação] Qualquer comunicação com o cliente será realizada através desse componente da solução. Outros módulos poderão, através de requisições, se comunicar com os clientes. O cliente continuará sendo contactado via email, porém, ao entrar na interface online da ferramenta geral da Eletronjun, poderá ter acesso a todo histórico de diálogo, solicitações, dúvidas, etc.
+        \item[Pagamentos] Qualquer tipo de pagamento também será realizado através da utilização do presente módulo. Os tipos de pagamento, tanto para serviço quanto para produtos serão padronizados para garantir uma experiência de qualidade aos usuários e um melhor controle do fluxo de caixa da empresa. Será possível para os envolvidos o acompanhamento do estado da transferência.
+        \item[Gerenciamento de Pedidos] Os pedidos serão organizados automaticamente, podendo a cada um ser atribuído um nível de prioridade. O cliente poderá gerenciar e acompanhar suas solicitações por serviços ou produtos, assim como um histórico completo de compras. A empresa poderá acompanhar uma lista completa de pedidos de acordo com prazos, prioridade ou outras características atribuídas aos produtos e serviços.
+      \end{description}
+
     \subsection{Principais Capacidades}
-  \section{Limitações} 
+      
+      % Tabela das principais capacidades
+      \begin{table}[!htbp]
+        \centering
+        \caption{Principais Capacidades}
+        \label{Principais Capacidades}
+        \begin{tabularx}{0.9\textwidth}{|s|b|}
+          \hline
+            \textbf{Capacidade}             &       \textbf{Descrição}   \\ \hline
+            Manter perfil de clientes & Permite que o cliente mantenha um perfil personalizado na ferramenta com seus pedidos, dúvidas e outras informações \\ \hline
+            Gerenciamento de Pagamentos & A empresa poderá acompanhar o fluxo de caixa de maneira automatizada e construir sistemas de vendas baseados em uma interface comum de acesso aos recursos do presente módulo. Já os clientes poderão verificar e realizar seus pagamentos através de um ambiente unificado que será acessível através de requisições de outros módulos.  \\ \hline
+            Gerenciamento de Pedidos  & Aos clientes será permitido realizar, cancelar, verificar e acompanhar seus pedidos. Já a empresa poderá acompanhar pedidos, solicitações de orçamento, gráficos, prazos e demais dados sobre o conjunto de clientes.  \\ \hline
+            Dinamização da Comunicação & Toda dinamica de comunicação entre empresa e cliente será implementada de maneiras diferentes através de partes integradas deste módulo. Os envios de email continuarão a ser possíveis, porém, ferramentas como chats e fóruns poderão ser construídas sobre os recursos desse plugin.   \\ \hline
+        \end{tabularx}
+      \end{table}
+
+  \section{Restrições do Projeto} \label{limit}
+
+    \begin{itemize}
+      \item O projeto está restringido a suposições de como os outros módulos futuramente desenvolvidos serão construído de uma forma otimizada.
+      \item Há também restrições econômicas por parte da empresa que não dispõe de recursos no momento para o planejamento da construção desses outros módulos.
+      \item Há limitação de recursos computacionais, já que a empresa terá que lidar com o empenho de servidores dedicados em serviços de nuvem genéricos como Digital Ocean, já que a mesma não possui servidores em seu ambiente empresarial.
+      \item Há também carência de uma equipe para realizar a manutenção e a evolução do software pós produção, visto que a equipe te T.I. é reduzida.
+      \item A construção do módulo deve estar de acordo com a arquitetura geral do sistema que ainda não foi projetado.
+      \item A utilização de \textit{softwares} que implementam um barramento na camada de serviços ainda não foi prevista, sendo que o tempo para o planejamento deste módulo não condiz com a expansão necessária para planejar esse tipo de integração.
+    \end{itemize} 
