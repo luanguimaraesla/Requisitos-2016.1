@@ -1,0 +1,148 @@
+\chapter{Gerêcia de requisitos}
+Neste capítulo serão apresentados os requisitos elicitados, desde os épicos, localizados no mais alto nível do SAFe até as histórias de usuário no nível \textit{Team}, o nível mais abaixo no SAFe.
+
+Para a gerência de requisitos, foi utilizada a ferramenta \textit{TargetProcess}, como foi proposto no trabalho 1.
+\section{Portfolio}
+O \textit{Portfolio} é o mais alto nível nível no SAFe, nesta etapa do trabalho o nível de portfólio é evidenciado pelas seguintes atividades: Analisar o contexto, Definir o tema de investimento, Elicitar e validar os épicos do negócio e priorizar um épicos. Atividades essas que foram realizadas utilizando algumas técnicas de elicitação como: Entrevistas, Workshops e Brainstorm.
+\subsection{Requisitos elicitados}
+\textbf{Tema de investimento} - Gestão de clientes da EletronJun
+
+Este tema foi extraído a partir da necessidade de organização e gestão dos clientes da empresa, visando facilitar a comunicação, além de aumentar a produtividade e a organização da empresa.
+
+\textbf{Épico 01} - Gerenciamento de clientes
+
+Compreente todas as ações do cliente dentro do sistema.
+
+\textbf{Épico 02} - Gerenciamento de pedidos
+
+Contém um registro de todos os pedidos realizados pelo cliente.
+
+\textbf{Épico 03} - Gerenciamento de pagamentos
+
+Contém um registro de todos os pagamentos do cliente.
+
+\textbf{Épico 04} - Centralização da comunicação
+
+Engloba toda a comunicação existente entre o cliente e a empresa.
+
+A seguir os épicos estão sendo detalhados através do template \textit{lightwaight business case}, que é mencionado no \ref{safe}.
+
+\begin{table}[]
+\centering
+\caption{Épico 01}
+\label{label-epico01}
+\begin{tabular}{
+>{\columncolor[HTML]{96FFFB}}r l}
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Gerenciamento de clientes}                                                                                                        \\
+Para                 & A empresa e seus clientes                                                                                                                   \\
+Quem                 & Faz a gestão dos clientes da empresa                                                                                                        \\
+A                    & Sistema de gerenciamento de clientes                                                                                                        \\
+É uma                & Ferramenta que faz a gestão dos clientes da empresa dentro do sistema                                                                       \\
+Que                  & Centraliza e facilita a gestão dos clientes em uma só ferramenta, aumentando a organização e a produtividade da empresa                     \\
+Diferente            & Da forma como é feita atualmente, onde não há um gerenciamento eficiente e a rastreabilidade dos clientes é nula                            \\
+Nossa solução        & Um sistema único e modularizado, onde existirá o módulo de gestão de clientes da EletronJun                                                 \\
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Escopo}                                                                                                                 \\
+Critérios de sucesso & Implementação de um único sistema para a gestão de clientes de forma que a organização aumente e consequentemente a produtividade da empresa \\
+No escopo            & Sistema para a gestão dos clientes                                                                                                          \\
+Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                        
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Épico 02}
+\label{label-epico02}
+\begin{tabular}{
+>{\columncolor[HTML]{96FFFB}}r l}
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Gerenciamento de pedidos}                                                                                                                                 \\
+Para                 & A empresa e seus clientes                                                                                                                                            \\
+Quem                 & Faz a gestão dos pedidos realizados pelos clientes da empresa                                                                                                                                 \\
+A                    & Sistema de gerenciamento de pedidos                                                                                                                                  \\
+É uma                & Ferramenta que faz a gestão dos pedidos realizados pelos clientes                                                                                                    \\
+Que                  & Melhora a forma como os pedidos são feitos, centralizando-os em uma única ferramenta                     \\
+Diferente            & Da forma como é feita atualmente, onde não há um gerenciamento eficiente e não é feito nenhum registro dos pedidos para uma consulta posterior                       \\
+Nossa solução        & Um sistema único e modularizado, onde existirá o módulo de gestão de pedidos realizados pelos clientes da EletronJun                                                 \\
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Escopo}                                                                                                                                          \\
+Critérios de sucesso & Implementação de um único sistema para a gestão de pedidos realizados pelos clientes de forma que a organização aumente e consequentemente a produtividade da empresa \\
+No escopo            & Sistema para a gestão de pedidos realizados pelos clientes                                                                                                           \\
+Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                                                 
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Épico 03}
+\label{label-epico03}
+\begin{tabular}{
+>{\columncolor[HTML]{96FFFB}}r l}
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Gerenciamento de pagamentos}                                                                                                                                                                                                                                             \\
+Para                 & A empresa e seus clientes                                                                                                                                                                                                                                                        \\
+Quem                 & Faz a gestão dos pagamentos realizados pelos clientes da empresa                                                                                                                                                                                                                 \\
+A                    & Sistema de pagamentos                                                                                                                                                                                                                                                            \\
+É uma                & Ferramenta que faz a gestão dos pagamentos realizados pelos clientes                                                                                                                                                                                                             \\
+Que                  & Centraliza e facilita os pagamentos realizados pelos clientes, aumentando a organização e os lucros da empresa                                                                                                                                                                   \\
+Diferente            & Da forma como é feita atualmente, onde o cliente envia um email para a empresa e a empresa envia um número de conta bancária para que o cliente faça um depósito                                                                                                                 \\
+Nossa solução        & Um sistema único e modularizado, onde existirá o módulo de pagamentos realizados pelos clientes da EletronJun, visando disponibilizar mais opções de pagamento para o cliente, como cartão de crédito, boleto e PagSeguro, além de permitir uma gestão dos pagamentos realizados \\
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Escopo}                                                                                                                                                                                                                                                      \\
+Critérios de sucesso & Implementação de um único sistema para o pagamento dos pedidos realizados pelos clientes de forma que aumente a organização e consequentemente os lucros da empresa                                                                                                               \\
+No escopo            & Sistema para o pagamento de pedidos realizados pelos clientes                                                                                                                                                                                                                    \\
+Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                                                                                                                                                             
+\end{tabular}
+\end{table}
+
+\begin{table}[]
+\centering
+\caption{Épico 04}
+\label{label-epico04}
+\begin{tabular}{
+>{\columncolor[HTML]{96FFFB}}r l}
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Centralização da comunicação}                                                                                                          \\
+Para                 & A empresa e seus clientes                                                                                                                     \\
+Quem                 & Faz a comunicação cliente/empresa                                                                                                             \\
+A                    & Sistema para a comunicação                                                                                                                    \\
+É uma                & Ferramenta que facilita a comunicação entre a empresa e o cliente                                                                             \\
+Que                  & Centraliza a comunicação cliente/empresa em uma única ferramenta aumentando assim a rastreabilidade e a organização                           \\
+Diferente            & Da forma como é feita atualmente, onde a comunicação é feita por diversos meios diferentes e não há uma rastreabilidade da comunicação feita  \\
+Nossa solução        & Um sistema único e modularizado, onde existirá um módulo para a comunicação entre o cliente e a empresa                                       \\
+\multicolumn{2}{c}{\cellcolor[HTML]{34CDF9}Escopo}                                                                                                                   \\
+Critérios de sucesso & Implementação de um único sistema para a comunicação cliente/empresa de forma que aumente a organização e consequentemente a produtividade da empresa \\
+No escopo            & Sistema para comunicação cliente/empresa                                                                                                      \\
+Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                          
+\end{tabular}
+\end{table}
+\section{Program}
+O \textit{Program} é o nível intermediário no SAFe, nesta etapa do trabalho o nível de programa é evidenciado pelas seguintes atividades: Elicitar \textit{features} e requisitos não-funcionais, definir o Visão(presente nos anexos) e priorizar uma \textit{feature}.
+\subsection{Requisitos elicitados}
+\textbf{\textit{Feature 01}} - Manutenção de clientes
+
+\textbf{\textit{Feature 02}} - Manutenção de pedidos
+
+\textbf{\textit{Feature 03}} - Meios de pagamento
+
+\textbf{\textit{Feature 04}} - Registro de pagamentos
+
+\textbf{\textit{Feature 05}} - Manutenção da comunicação
+\subsection{Requisitos não-funcionais}
+\subsection{Visão}
+O documento de visão produzido está localizado no Anexo B.
+\subsection{Roadmap}
+\section{Team}
+O \textit{Team} é o último nível do SAFe, nesta etapa do trabalho o nível de time é evidenciado pelas seguintes atividades: Elicitar e Validar histórias de usuário, Planejar \textit{Sprint}, Exexutar e Gerenciar \textit{Sprint}, e fazer a Retrospectiva e a Revisão da \textit{Sprint}.
+\subsection{Requisitos elicitados}
+\textbf{\textit{História de usuário 01}} - Eu como cliente gostaria de um sistema no qual eu pudesse ter uma conta pessoal. Para que assim eu possa gerenciar os meus acessos e as minhas atividades.
+
+\textbf{\textit{História de usuário 02}} - Eu como cliente, gostaria de gerenciar a minha conta. Para que eu possa manter a minha conta da melhor forma pelo tempo que for necessário.
+
+\textbf{\textit{História de usuário 03}} - Eu como cliente, gostaria de um sistema no qual eu pudesse fazer um orçamento dos projetos. Para que eu possa ter uma ideia do custo do projeto antes de fazer o pedido.
+
+\textbf{\textit{História de usuário 04}} - Eu como cliente, gostaria de um sistema no qual eu pudesse fazer pedidos. Para que eu envie os projetos e faça os pedidos.
+
+\textbf{\textit{História de usuário 05}} - Eu como cliente, gostaria de um sistema no qual eu pudesse gerenciar os pedidos realizados. Para que seja mantido um histórico possibilitando um controle melhor de todos os pedidos.
+
+\textbf{\textit{História de usuário 06}} - Eu como cliente, gostaria de um sistema no qual eu pudesse acompanhar o status de um pedido. Para que eu possa saber em que fazer de desenvolvimento está o projeto do qual eu fiz o pedido.
+
+\textbf{\textit{História de usuário 07}} - Eu como cliente, gostaria de um sistema no qual eu pudesse efetuar pagamentos por diferentes meios. Para que eu tenha mais opções na hora de efetuar o pagamento pelo meu projeto.
+
+\textbf{\textit{História de usuário 08}} - Eu como empresa/cliente, gostaria de um sistema no qual eu pudesse gerenciar os pagamentos realizados. Para que assim eu possa manter um histórico e um controle melhor da parte financeira.
+
+\textbf{\textit{História de usuário 09}} - Eu como cliente, gostaria de um sistema no qual eu pudesse ter um canal de comunicação entre a empresa/cliente. Para que a comunicação seja mais fácil e centralizada em um local.
