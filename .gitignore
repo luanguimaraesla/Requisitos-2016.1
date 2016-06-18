@@ -225,3 +225,16 @@ TSWLatexianTemp*
 .upb
 
 *.DS_Store
+
+#Rails
+client-management-tools/Gemfile.lock
+client-management-tools/schema.rb
+client-management-tools/.bundle
+client-management-tools/db/schema.rb
+client-management-tools/db/*.sqlite3
+client-management-tools/db/*.sqlite3-journal
+.sw*
+client-management-tools/log/*
+!client-management-tools/log/.keep
+client-management-tools/tmp/*
+client-management-tools/public
