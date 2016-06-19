@@ -8,6 +8,14 @@
 </head>
 <body>
 
+<% if current_client.present? %>
+  <%= "#{current_client.name} | #{current_client.email}" %>
+  <%= link_to 'Sign Out', destroy_client_session_path, method: :delete %>
+<% else %>
+  <%= link_to 'Sign In', new_client_session_path %>
+  <%= link_to 'Sign Up', new_client_registration_path %>
+<% end %>
+
 <%= yield %>
 
 </body>
