@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :clients, controllers: { sessions: 'clients/sessions' }
   resources :services
   resources :products
+  match '/clients/:id', :to => 'clients#show', :as => :client, via: :get
   root 'products#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

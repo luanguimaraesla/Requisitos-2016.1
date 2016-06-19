@@ -126,11 +126,6 @@
 								<% end %>
 								<p>
 									<%= current_client.name %> - 
-									<% if not current_client.work.blank? %>
-										<%= current_client.work %>
-									<% else %>
-										<%= current_client.name %>
-									<% end %>									
 									<small><%= current_client.created_at.strftime("Member since %b. %Y")%></small>
 								</p>
 							</li>
