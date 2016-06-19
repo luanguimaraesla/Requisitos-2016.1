@@ -29,7 +29,6 @@ A seguir os épicos estão sendo detalhados através do template \textit{lightwa
 
 \begin{table}[]
 \centering
-\caption{Épico 01}
 \label{label-epico01}
 \begin{tabular}{
 >{\columncolor[HTML]{96FFFB}}r l}
@@ -46,11 +45,11 @@ Critérios de sucesso & Implementação de um único sistema para a gestão de c
 No escopo            & Sistema para a gestão dos clientes                                                                                                          \\
 Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                        
 \end{tabular}
+\caption{Épico 01}
 \end{table}
 
 \begin{table}[]
 \centering
-\caption{Épico 02}
 \label{label-epico02}
 \begin{tabular}{
 >{\columncolor[HTML]{96FFFB}}r l}
@@ -67,11 +66,11 @@ Critérios de sucesso & Implementação de um único sistema para a gestão de p
 No escopo            & Sistema para a gestão de pedidos realizados pelos clientes                                                                                                           \\
 Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                                                 
 \end{tabular}
+\caption{Épico 02}
 \end{table}
 
 \begin{table}[]
 \centering
-\caption{Épico 03}
 \label{label-epico03}
 \begin{tabular}{
 >{\columncolor[HTML]{96FFFB}}r l}
@@ -88,11 +87,11 @@ Critérios de sucesso & Implementação de um único sistema para o pagamento do
 No escopo            & Sistema para o pagamento de pedidos realizados pelos clientes                                                                                                                                                                                                                    \\
 Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                                                                                                                                                             
 \end{tabular}
+\caption{Épico 03}
 \end{table}
 
 \begin{table}[]
 \centering
-\caption{Épico 04}
 \label{label-epico04}
 \begin{tabular}{
 >{\columncolor[HTML]{96FFFB}}r l}
@@ -109,6 +108,7 @@ Critérios de sucesso & Implementação de um único sistema para a comunicaçã
 No escopo            & Sistema para comunicação cliente/empresa                                                                                                      \\
 Fora do escopo       & Aprovação do sistema pelos clientes                                                                                                          
 \end{tabular}
+\caption{Épico 04}
 \end{table}
 \section{Program}
 O \textit{Program} é o nível intermediário no SAFe, nesta etapa do trabalho o nível de programa é evidenciado pelas seguintes atividades: Elicitar \textit{features} e requisitos não-funcionais, definir o Visão(presente nos anexos) e priorizar uma \textit{feature}.
@@ -126,6 +126,20 @@ O \textit{Program} é o nível intermediário no SAFe, nesta etapa do trabalho o
 \subsection{Visão}
 O documento de visão produzido está localizado no Anexo B.
 \subsection{Roadmap}
+O \textit{roadmap} funciona como um documento que faz a padronização entre o nível de time e programa, é um "caminho" a ser seguido no cronograma das entregas planejadas. Representa os incrementos do software que devem ser entregues. Existem dois tipos de \textit{roadmap}: \ref{safe}
+\begin{itemize}
+\item \textbf{síncrono}: \textit{features} são entregues sincronizadas, em cada \textit{release} é entregue uma \textit{feature}.
+\item \textbf{assíncrono}: \textit{features} são entregues por versões, uma \textit{release} não precisa conter uma \textit{feature} completa, mas sim uma versão que pode ser incrementada, na próxima \textit{release}.
+\end{itemize}
+
+O nosso planejamento foi baseado no \textit{roadmap} síncrono, ilustrado na imagem abaixo:
+  \begin{figure}[!htbp]
+    \centering
+    \includegraphics[scale=0.75]{figuras/roadmap}
+    \caption[Roadmap]{Roadmap\footnotemark}
+    \label{Roadmap}
+  \end{figure}
+  
 \section{Team}
 O \textit{Team} é o último nível do SAFe, nesta etapa do trabalho o nível de time é evidenciado pelas seguintes atividades: Elicitar e Validar histórias de usuário, Planejar \textit{Sprint}, Exexutar e Gerenciar \textit{Sprint}, e fazer a Retrospectiva e a Revisão da \textit{Sprint}.
 \subsection{Requisitos elicitados}
@@ -146,3 +160,7 @@ O \textit{Team} é o último nível do SAFe, nesta etapa do trabalho o nível de
 \textbf{\textit{História de usuário 08}} - Eu como empresa/cliente, gostaria de um sistema no qual eu pudesse gerenciar os pagamentos realizados. Para que assim eu possa manter um histórico e um controle melhor da parte financeira.
 
 \textbf{\textit{História de usuário 09}} - Eu como cliente, gostaria de um sistema no qual eu pudesse ter um canal de comunicação entre a empresa/cliente. Para que a comunicação seja mais fácil e centralizada em um local.
+
+\section{Gerência de mudança}
+\subsection{Atributos de requisitos}
+\subsection{Rastreabilidade de requisitos}
