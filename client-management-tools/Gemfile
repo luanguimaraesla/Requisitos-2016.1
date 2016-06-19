@@ -17,6 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 #UI
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
+gem "paperclip", "~> 4.3"
 
 source "https://rails-assets.org/" do
   gem 'rails-assets-adminlte'
