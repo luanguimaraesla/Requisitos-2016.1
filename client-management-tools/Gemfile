@@ -15,14 +15,17 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 #UI
-gem 'bootstrap-sass', '~> 3.3.6'
-gem 'font-awesome-sass'
 gem "paperclip", "~> 4.3"
-
-source "https://rails-assets.org/" do
-  gem 'rails-assets-adminlte'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap-rtl'
+  gem 'rails-assets-jquery-knob'
+  gem 'rails-assets-bootstrap-daterangepicker'
+  gem 'rails-assets-jquery-sparkline'
+  gem 'rails-assets-jquery-icheck'
+  gem 'rails-assets-admin-lte'
 end
 
+gem 'admin_lte-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

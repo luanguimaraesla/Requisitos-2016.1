@@ -12,6 +12,6 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require admin_lte/admin_lte
 //= require_tree .
-//= requires_adminlte
 //= require turbolinks
