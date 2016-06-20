@@ -13,4 +13,7 @@ class ApplicationController < ActionController::Base
       u.permit(:email, :password, :password_confirmation, :current_password, :username, :name, :phone, :company, :address)
     end
   end
+  def after_sign_in_path_for(resource)
+    @client = current_client
+  end
 end
