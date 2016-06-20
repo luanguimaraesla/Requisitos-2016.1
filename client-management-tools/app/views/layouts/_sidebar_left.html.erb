@@ -58,7 +58,10 @@
       </li>
       <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
       <li class="header">MAIS</li>
-      <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Configurações</span></a></li>
+      <li>
+        <%= link_to edit_client_registration_path do %>
+          <i class="fa fa-circle-o text-red"></i> <span>Configurações</span></li>
+        <% end %>
       <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Ajuda</span></a></li>
       <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Canais de Atendimento</span></a></li>
     </ul>
