@@ -1,11 +1,11 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="" class="logo">
+  <%= link_to client_path(current_client), class: "logo" do %>
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>EL</b>J</span>
+    <span class="logo-mini"><b>ME</b>J</span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg"><b>Eletron</b>jun</span>
-  </a>
+  <% end %>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
     <% if client_signed_in? %>

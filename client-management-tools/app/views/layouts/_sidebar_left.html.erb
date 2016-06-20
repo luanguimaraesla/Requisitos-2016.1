@@ -29,34 +29,35 @@
       <li class="treeview">
         <a href="#">
           <i class="fa fa-pie-chart"></i>
-          <span>Charts</span>
+          <span>Minha Conta</span>
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
-          <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
-          <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
-          <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+          <li>
+            <%= link_to client_path(current_client) do %>
+              <i class="fa fa-circle-o"></i> Informações Gerais</li>
+            <% end %>
+          <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Meus produtos</a></li>
+          <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Meus Serviços</a></li>
         </ul>
       </li>
       <li class="treeview">
         <a href="#">
-          <i class="fa fa-edit"></i> <span>Forms</span>
+          <i class="fa fa-book"></i> <span>Documentos</span>
           <i class="fa fa-angle-left pull-right"></i>
         </a>
         <ul class="treeview-menu">
-          <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-          <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
-          <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
+          <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> Termos</a></li>
+          <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Licença</a></li>
+          <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> FAQ</a></li>
         </ul>
       </li>
       <li>
         <a href="pages/mailbox/mailbox.html">
-          <i class="fa fa-envelope"></i> <span>Mailbox</span>
+          <i class="fa fa-envelope"></i> <span>Mensagens</span>
           <small class="label pull-right bg-yellow">12</small>
         </a>
       </li>
-      <li><a href="documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
       <li class="header">MAIS</li>
       <li>
         <%= link_to edit_client_registration_path do %>
