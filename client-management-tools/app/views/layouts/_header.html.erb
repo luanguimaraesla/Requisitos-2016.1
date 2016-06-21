@@ -1,10 +1,12 @@
 <header class="main-header">
   <!-- Logo -->
-  <%= link_to client_path(current_client), class: "logo" do %>
-    <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>ME</b>J</span>
-    <!-- logo for regular state and mobile devices -->
-    <span class="logo-lg"><b>Eletron</b>jun</span>
+  <% if client_signed_in? %>
+    <%= link_to client_path(current_client), class: "logo" do %>
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>ME</b>J</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Eletron</b>jun</span>
+    <% end %>
   <% end %>
   <!-- Header Navbar: style can be found in header.less -->
   <nav class="navbar navbar-static-top">
@@ -51,12 +53,12 @@
                 <ul class="menu">
                   <li>
                     <%= link_to root_path do %>
-                     <i class="fa fa-users text-aqua"></i> Voltar para o Início
+                     <i class="fa fa-reply text-aqua"></i> Voltar para o Início
                     <% end %>
                   </li>
                   <li>
                     <%= link_to destroy_client_session_path, method: :delete do %>
-                      <i class="fa fa-edit text-green"></i> Log Out
+                      <i class="fa fa-power-off text-red"></i> Log Out
                     <% end %>
                   </li>
                 </ul>
