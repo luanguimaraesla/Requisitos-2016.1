@@ -5,15 +5,41 @@ class ApplicationController < ActionController::Base
 
   before_filter :update_sanitized_params, if: :devise_controller?
   def update_sanitized_params
-    devise_parameter_sanitizer.for(:sign_up) do |u|
-      u.permit(:email, :password, :password_confirmation, :current_password, :username, :name, :cpf, :phone, :company, :address)
-    end
-
-    devise_parameter_sanitizer.for(:account_update) do |u|
-      u.permit(:email, :password, :password_confirmation, :current_password, :username, :name, :phone, :company, :address)
+    if resource_class == Client
+      Client::ParameterSanitizer.new(Client, :client, params)
+    else
+      Admin::ParameterSanitizer.new(Admin, :admin, params)
     end
   end
+
   def after_sign_in_path_for(resource)
-    @client = current_client
+    if resource_class == Client
+      @client = current_client
+    else
+      @admin = current_admin
+      client_path(@admin)
+    end
+  end
+end
+
+class Client::ParameterSanitizer < Devise::ParameterSanitizer
+  private
+  def sign_in
+    default_paramiters.permit(:sign_up, keys: [:email, :password, :password_confirmation, :current_password, :username, :name, :cpf, :phone, :company, :address])
+  end
+
+  def account_update
+    default_paramiters.permit(:account_update, keys: [:email, :password, :password_confirmation, :current_password, :username, :name, :phone, :company, :address])
+  end
+end
+
+class Admin::ParameterSanitizer < Devise::ParameterSanitizer
+  private
+  def sign_in
+    default_paramiters.permit(:sign_up, keys: [:email, :password, :password_confirmation, :current_password])
+  end
+
+  def account_update
+    default_paramiters.permit(:account_update, keys: [:email, :password, :password_confirmation, :current_password])
   end
 end
