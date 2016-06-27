@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :clients, controllers: { sessions: 'clients/sessions' }
+  devise_for :admins, controllers: { sessions: 'admins/sessions' }
   resources :services
   resources :products
 
