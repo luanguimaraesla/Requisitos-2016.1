@@ -237,4 +237,3 @@ client-management-tools/db/*.sqlite3-journal
 client-management-tools/log/*
 !client-management-tools/log/.keep
 client-management-tools/tmp/*
-client-management-tools/public
