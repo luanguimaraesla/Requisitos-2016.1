@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :products
 
   get '/clients/:id', :to => 'clients#show', :as => :client, via: :get
+  get '/admins/:id', :to => 'admins#show', :as => :admin, via: :get
 
   root 'pages#start'
 

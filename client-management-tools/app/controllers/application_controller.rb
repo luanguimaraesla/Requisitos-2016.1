@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
       @client = current_client
     else
       @admin = current_admin
-      client_path(@admin)
+      admin_path(@admin)
     end
   end
 end
