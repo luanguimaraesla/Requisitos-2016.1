@@ -1,6 +1,11 @@
 class AdminsController < ApplicationController
   def show
     @admin = Admin.find(params[:id])
+    @counters = {
+      products: Product.count,
+      services: Service.count,
+      clients:   Client.count
+    }
   end
 
   def show_clients
