@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   get '/clients/:id', :to => 'clients#show', :as => :client, via: :get
   get '/admins/:id', :to => 'admins#show', :as => :admin, via: :get
+  get '/admins/:id/show_clients', :to => 'admins#show_clients'
 
   root 'pages#start'
 
