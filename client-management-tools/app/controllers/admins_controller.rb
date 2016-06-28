@@ -8,11 +8,11 @@ class AdminsController < ApplicationController
   end
 
   def show_products
-    @clients = Product.all
+    @products = Product.all
   end
 
   def show_services
-    @clients = Service.all
+    @services = Service.all
   end
 end
 
