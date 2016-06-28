@@ -24,6 +24,9 @@
               <th>Nome</th>
               <th>Data</th>
               <th>Status</th>
+              <th>Código</th>
+              <th>Preço</th>
+              <th>Categoria</th>
               <th>Solicitações</th>
             </tr>
             <% @products.each do |product| %>
@@ -32,6 +35,9 @@
                 <td><%= product.name %></td>
                 <td><%= product.created_at.strftime("%d-%m-%Y") %></td>
                 <td><span class="label label-success">Disponível</span></td>
+                <td><%= product.code %></td>
+                <td><%= product.price %></td>
+                <td><%= product.category %></td>
                 <td>N/A</td>
               </tr>
             <% end %>

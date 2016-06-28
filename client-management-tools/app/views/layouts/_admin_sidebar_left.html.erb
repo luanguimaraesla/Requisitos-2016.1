@@ -37,8 +37,16 @@
             <%= link_to admin_path(current_admin) do %>
               <i class="fa fa-circle-o"></i> Painel de Controle Geral</li>
             <% end %>
-          <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Produtos</a></li>
-          <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Serviços</a></li>
+          <li>
+            <%= link_to show_products_path(current_admin) do %>
+              <i class="fa fa-circle-o"></i> Produtos
+            <% end %>
+          </li>
+          <li>
+            <%= link_to show_services_path(current_admin) do %>
+              <i class="fa fa-circle-o"></i> Serviços
+            <% end %>
+          </li>
         </ul>
       </li>
       <li class="treeview">

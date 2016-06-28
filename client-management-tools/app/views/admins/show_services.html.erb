@@ -24,6 +24,8 @@
               <th>Nome</th>
               <th>Data</th>
               <th>Status</th>
+              <th>Código</th>
+              <th>Preço</th>
               <th>Solicitações</th>
             </tr>
             <% @services.each do |service| %>
@@ -31,7 +33,9 @@
                 <td><%= service.id %></td>
                 <td><%= service.name %></td>
                 <td><%= service.created_at.strftime("%d-%m-%Y") %></td>
-                <td><span class="label label-success">Disponível</span></td>
+                <td><span class="label label-warning">Indisponível</span></td>
+                <td><%= service.code %></td>
+                <td><%= service.price %></td>
                 <td>N/A</td>
               </tr>
             <% end %>
