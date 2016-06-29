@@ -6,14 +6,16 @@
     <!-- small box -->
     <div class="small-box bg-yellow">
       <div class="inner">
-        <h3>N/A</h3>
+        <h3><%= @orders_counter %></h3>
 
         <p>Pedidos</p>
       </div>
       <div class="icon">
         <i class="ion ion-bag"></i>
       </div>
-      <a href="#" class="small-box-footer">Mais informações <i class="fa fa-arrow-circle-right"></i></a>
+      <%= link_to my_orders_path(current_client), class: "small-box-footer" do %>
+        Mais informações <i class="fa fa-arrow-circle-right"></i>
+      <% end %>
     </div>
   </div>
   <!-- ./col -->
