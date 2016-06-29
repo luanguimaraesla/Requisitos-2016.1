@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   resources :products
 
   get '/clients/:id', :to => 'clients#show', :as => :client, via: :get
+  get '/clients/:id/my_orders', :to => 'clients#my_orders', as: :my_orders, via: :get
+
   get '/admins/:id', :to => 'admins#show', :as => :admin, via: :get
   get '/admins/:id/show_clients', :to => 'admins#show_clients', as: :show_clients, via: :get
   get '/admins/:id/show_products', :to => 'admins#show_products', as: :show_products, via: :get
